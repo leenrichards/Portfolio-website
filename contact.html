@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./css/normalize.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.production.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Lynn</title>
+
+	<link rel="shortcut icon" href="img/lynn_favicon.png" sizes="32x32 " type="image/png">
+</head>
+
+<body>
+	<!------- HEADER ------>
+	<header class="page-header">
+		<!--  LOGO  -->
+		<img src="img/lynn_logo.png" height="100px" style="vertical-align: middle;"
+			alt="Personal logo of Lynn Richards, a clipart of a laptop with my initials LR on its screen" width="150"
+			class="page-header__item">
+		<nav class=" page-header__item">
+			<div class="main-navigation topBotomBordersIn">
+				<ul role="menubar" class="navigation-list ">
+					<li role="presentation">
+						<a href="index.html" role="menuitem" class="navigation-list__item">HOME</a>
+					</li>
+					<li role="presentation">
+						<a href="about.html" role="menuitem" class="navigation-list__item">ABOUT ME</a>
+					</li>
+					<li role="presentation">
+						<a href="work.html" role="menuitem" class="navigation-list__item">MY WORK</a>
+					</li>
+					<li role="presentation">
+						<a href="contact.html" role="menuitem" class="navigation-list__item"
+							id="navigation-list__item--active">CONTACT ME</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!------- END OF HEADER ------>
+	<div class="contact">
+		<!------- CONTACT FORM ------>
+		<h1>Contact</h1>
+
+		<form action="" method="post" id="contact-form">
+			<label class="standard-label" for="contact-email">E-mail: </label>
+			<input type="email" id="contact-email" placeholder="your@email.com" required>
+
+			<label class="standard-label" for="contact-phone">Tel (xxx-xxx-xxxx): </label>
+			<input type="tel" id="contact-phone" placeholder="012-3456-789" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+
+			<label class="standard-label" for="contact-message">Message: </label>
+			<textarea maxlength="240" id="contact-message" required></textarea>
+			<br>
+			<input type="submit" class="button" value="Send message">
+		</form>
+		<!------- END OF CONTACT FORM ------>
+
+		<p>
+		<div id="contactinfo">
+			Lynn Richards<br>
+			3496 West 14th Avenue <br>
+			Vancouver, B.C.<br>
+			Canada<br>
+
+			<b>Email:</b>&nbsp;<a href="mailto:leenrichards@yahoo.com" id="lynn-email">leenrichards@yahoo.com</a><br>
+			<b>Tel:</b>&nbsp;<a href="7789870378">+1-778-987-0378 (cell)</a><br>
+
+		</div>
+		</p>
+	</div>
+
+	<!------- FOOTER------>
+	<footer class="page-footer">
+		<p>Find me on:</p>
+		<div class="social-media">
+			<img src="img/github_logo.svg" width="30px" height="30px" alt="Github link">
+			<img src="img/twitter_logo.svg" width="30px" height="30px" alt="Twitter link">
+			<img src="img/linkedin_logo.svg" width="30px" height="30px" alt="LinkedIn link">
+		</div>
+	</footer>
+	<!------- END OF FOOTER------>
+
+	<!---<script src="js/tota11y.min.js"></script>-->
+</body>
+
+</html>
