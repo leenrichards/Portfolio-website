@@ -103,12 +103,10 @@ button:hover, button:focus, .button:hover, .button:focus  {
   border-radius: 50%;
 
 }
-.page-footer {
-  clear: both;
+.page-footer { clear: both;
   display: flex;
   flex-direction: column;
   text-align:center;
-  
 }
 .profile, .about, .contact {
   max-width: 700px;
