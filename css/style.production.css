@@ -189,8 +189,7 @@ button:focus  {
   border-radius: 50%;
 
 }
-.page-footer {
-  clear: both;
+.page-footer { clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,13 +197,15 @@ button:focus  {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  text-align:center;
 }
 .profile, .about, .contact {
   max-width: 700px;
   margin: 0 auto;
 }
-
+#linkedIn-logo {
+  vertical-align: text-bottom;
+}
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,6 +319,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 .project-list__item {
  display: inline-block;
  width: 33%;
+ padding: 1rem;
 }
 /* end grid fallback */
 
@@ -336,6 +338,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
    width: auto;
    min-height: auto;
    margin: 0;
+   padding:1rem;
  }
  .project-list__item:last-child {
    -ms-grid-column: 3;
@@ -375,7 +378,7 @@ margin-left: 15px;
   }
 }
 
-@-webkit-keyframes color-change {
+@-webkit-keyframes sun-color-change {
   0% {
     fill: #F5B419;
   }
@@ -387,7 +390,7 @@ margin-left: 15px;
   }
 }
 
-@keyframes color-change {
+@keyframes sun-color-change {
   0% {
     fill: #F5B419;
   }
@@ -398,10 +401,11 @@ margin-left: 15px;
     fill: #f76414;
   }
 }
+
 
 .sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  -webkit-animation: 4s sun-color-change infinite alternate linear;
+          animation: 4s sun-color-change infinite alternate linear;
 }
 @-webkit-keyframes cloud-move {
   from {
@@ -429,25 +433,57 @@ margin-left: 15px;
 }
 @-webkit-keyframes cloud-move-reverse {
   from {
-    -webkit-transform: translate(30px, 50px);
-            transform: translate(30px, 50px);
+    -webkit-transform: translate(30px, 20px);
+            transform: translate(30px, 20px);
   }
   to {
-    -webkit-transform: translate(0px, 50px);
-            transform: translate(0px, 50px);
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
   }
 }
 @keyframes cloud-move-reverse {
   from {
-    -webkit-transform: translate(30px, 50px);
-            transform: translate(30px, 50px);
+    -webkit-transform: translate(30px, 20px);
+            transform: translate(30px, 20px);
   }
   to {
-    -webkit-transform: translate(0px, 50px);
-            transform: translate(0px, 50px);
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px);
   }
 }
 .cloud-right {
   -webkit-animation: 10s cloud-move-reverse infinite alternate linear;
           animation: 10s cloud-move-reverse infinite alternate linear;
+}
+@-webkit-keyframes blinking-tongue {
+  0% { 
+    fill:transparent;
+  }
+  100% {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #FFC7FB;
+    stroke: #000000;
+    stroke-width: 3.600000e-02;
+    stroke-miterlimit: 10;
+    
+  }
+}
+@keyframes blinking-tongue {
+  0% { 
+    fill:transparent;
+  }
+  100% {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #FFC7FB;
+    stroke: #000000;
+    stroke-width: 3.600000e-02;
+    stroke-miterlimit: 10;
+    
+  }
+}
+.tongue {
+  -webkit-animation: blinking-tongue 1.5s infinite;
+          animation: blinking-tongue 1.5s infinite;
 }
