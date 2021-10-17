@@ -28,7 +28,8 @@ td {
   font-weight: 400;
   font-size: var(--body-font-size);
   text-align: justify;
-  line-height: 1.2;
+  line-height: 2.2;
+  margin-bottom: 11rem;
 }
 
 th {
