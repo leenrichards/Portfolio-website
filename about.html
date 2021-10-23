@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/normalize.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.production.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Lynn Richards</title>
     <link rel="shortcut icon" href="img/lynn_favicon.png" sizes="32x32 " type="image/png">
@@ -54,33 +54,31 @@
             and experiences on the web,<br>and am always eager to learn new technologies and refine my technical skills.
         </p>
 
-        <!------- SKILLS TABLE ------>
-        <table id="skills-table" role="skills-table">
-            <thead>
-                <tr>
-                    <th>Skills</th>
-                    <th>Years of Experience</th>
-                    <th>Level of Expertise</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>6 to 8 years</td>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>6 to 8 years</td>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>8 to 10 years</td>
-                    <td>Advanced</td>
-                </tr>
-            </tbody>
-        </table>
+    <!------- SKILLS TABLE ------>
+    <div class="skillbar clearfix " data-percent="80%">
+        <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+        <div class="skillbar-bar" style="background: #e67e22;"></div>
+        <div class="skill-bar-percent">80%</div>
+    </div> <!-- End Skill Bar -->
+
+    <div class="skillbar clearfix " data-percent="70%">
+        <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+        <div class="skillbar-bar" style="background: #3498db;"></div>
+        <div class="skill-bar-percent">70%</div>
+    </div> <!-- End Skill Bar -->
+
+    <div class="skillbar clearfix " data-percent="85%">
+        <div class="skillbar-title" style="background: #2c3e50;"><span>Javascript</span></div>
+        <div class="skillbar-bar" style="background: #2c3e50;"></div>
+        <div class="skill-bar-percent">85%</div>
+    </div> <!-- End Skill Bar -->
+
+    <div class="skillbar clearfix " data-percent="60%">
+        <div class="skillbar-title" style="background: #27ae60;"><span>Photoshop</span></div>
+        <div class="skillbar-bar" style="background: #2ecc71;"></div>
+        <div class="skill-bar-percent">60%</div>
+    </div> <!-- End Skill Bar -->
+    <!------- END OF SKILLS TABLE ------>
         <p>
             <a href="./files/Lynn Richards CV 2021.pdf" class="button" target="_blank">Download my resume</a>
         </p>
@@ -4335,7 +4333,9 @@
         </p>
     </footer>
     <!------- END OF FOOTER------>
-
+v\<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
     <!---<script src="js/tota11y.min.js"></script>-->
 </body>
 
