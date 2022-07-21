@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="./css/normalize.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.production.css" type="text/css">
+	<link rel="stylesheet" href="./css/styles.css" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact Lynn</title>
 
@@ -14,11 +14,8 @@
 
 <body>
 	<!------- HEADER ------>
-	<header class="page-header">
-		<!--  LOGO  -->
-		<a href="index.html"><img src="img/lynn_logo.png" height="100" style="vertical-align: middle;"
-			alt="Personal logo of Lynn Richards, a clipart of a laptop with my initials LR on its screen" width="150"
-			class="page-header__item"></a>
+	<header class="page-header-dark">
+
 		<nav class=" page-header__item">
 			<div class="main-navigation topBotomBordersIn">
 				<ul role="menubar" class="navigation-list ">
@@ -27,71 +24,60 @@
 							HOME</a>
 					</li>
 					<li role="presentation">
-						<a href="about.html" role="menuitem" class="navigation-list__item">
-							ABOUT ME</a>
+						<a href="professional.html" role="menuitem" class="navigation-list__item">
+							PROFESSIONAL</a>
 					</li>
 					<li role="presentation">
-						<a href="work.html" role="menuitem" class="navigation-list__item">
-							MY WORK</a>
+						<a href="portfolio.html" role="menuitem" class="navigation-list__item">
+							PORTFOLIO</a>
 					</li>
-					<!-- contact me page-->
-					<!--<li role="presentation">-->
-					<!--<a href="contact.html" role="menuitem" class="navigation-list__item">-->
-					<!--CONTACT ME</a>-->
-					<!--</li> -->
+					<li role="presentation">
+						<a href="contact.html" role="menuitem" class="navigation-list__item"
+							id="navigation-list__item--active">
+							CONTACT </a>
+					</li>
 				</ul>
 			</div>
 		</nav>
 	</header>
 	<!------- END OF HEADER ------>
+
 	<div class="contact">
-		<h1>Contact me</h1>
-		<!------- CONTACT FORM ---
-		<h1>Contact</h1>
 
-		<form action="" method="post" id="contact-form">
-			<label class="standard-label" for="contact-email">E-mail: </label>
-			<input type="email" id="contact-email" placeholder="your@email.com" required>
+		<h1 class="page-title"> CONTACT</h1>
+		<h2 class="page-subtitle"> REACH OUT!</h2>
 
-			<label class="standard-label" for="contact-phone">Tel (xxx-xxx-xxxx): </label>
-			<input type="tel" id="contact-phone" placeholder="012-3456-789" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
-			<label class="standard-label" for="contact-message">Message: </label>
-			<textarea maxlength="240" id="contact-message" required></textarea>
-			<br>
-			<input type="submit" class="button" value="Send message">
-		</form>--->
-		<!------- END OF CONTACT FORM ------>
 
-		<p>
-		<div id="contactinfo">
-			Lynn Richards<br>
-			3496 West 14th Avenue <br>
-			Vancouver, B.C.<br>
-			Canada<br>
-
-			<p>
-				<b>Email:</b>&nbsp;<a href="mailto:leenrichards@yahoo.com"
-					id="lynn-email">leenrichards@yahoo.com</a><br>
-				<b>Tel:</b>&nbsp;<a href="7789870378">+1-778-987-0378 (cell)</a><br>
-			</p>
+		<div class="contact-text">Please feel free to contact me by email/phone:</div>
+		<div class="contact-info">
+			<a class="email-link" href="mailto:lynn@lynnrichards.net">lynn@lynnrichards.net</a>
+			<div class="contact-phone">Tel: (+1) 778-987-0378</div>
 		</div>
-		</p>
+
+
+
 	</div>
 
 	<!------- FOOTER---->
-	<footer class="page-footer">
-		<p>
-			Find me on : <a href="https://www.linkedin.com/in/lynn-richards1984/" target="_blank"><img
-					src="img/LinkedIn-Logolong.svg" width="100" height="100" alt="LinkedIn link"
-					style="vertical-align: middle;" id="linkedIn-logo"></a>
-			<a href="https://github.com/leenrichards?tab=repositories" target="_blank"><img src="img/github_logo.svg"
-					width="30" height="30" alt="Github link" style="vertical-align: middle;"></a>
-		</p>
+	<footer class="page-footer-contact">
+
+		<a href="https://twitter.com/lynnrichtweets" target="blank">
+			<img class="contact-logo" src="img/twitter-logo.webp"></a>
+
+		<a href="https://www.linkedin.com/in/lynnrichards1/">
+			<img class="contact-logo" src="img/linkedin-logo.webp"></a>
+
+		<a href="https://medium.com/@lynn-richards"><img class="contact-logo" src="img/medium-logo.png"></a>
+		<a href="https://github.com/leenrichards"><img class="contact-logo" src="img/github-logo.png"></a>
+
 	</footer>
+
 	<!------- END OF FOOTER------>
 
+
 	<!---<script src="js/tota11y.min.js"></script>-->
+
 </body>
 
 </html>
