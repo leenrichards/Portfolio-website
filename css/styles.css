@@ -125,11 +125,11 @@ a:active {
   object-fit: cover;
 }
 
-.home-intotext{
-  top: 300px;
+.professional-content{
+  top: 75px;
   position: absolute;
   color: white;
-  font-size: 2rem;
+  
   justify-content: center;
   width: 80%;
   line-height: 3rem;
@@ -215,7 +215,7 @@ filter: grayscale(0%);
 .page-footer-about {
   background: #0a1124;
   display: block;
-  line-height: 2;
+  line-height: 1.5;
   flex-direction: column;
   text-align: left;
   width: 100%;
@@ -223,25 +223,26 @@ filter: grayscale(0%);
   POSITION: fixed;
   bottom: 0;
   height: 20%;
-  padding: 2% 20% 15px 30%;
-  margin-bottom: 1%;
+  padding: 10px 20% 15px 20%;
+}
+
+.professional-desc{
+  line-height: 1.5;
+  padding: 20px;
 }
 
 .page-footer-contact {
   background: #0a1124;
   display: block;
-  
   flex-direction: column;
   text-align: center;
   width: 100%;
   color: var(--secondary-color);
   POSITION: fixed;
   bottom: 0;
- 
   padding: 2% 0 20px 0;
-  
-
 }
+
 .resume-box{
   text-align: center;
   padding: 5px 20px 5px 20px;
@@ -279,6 +280,7 @@ filter: grayscale(0%);
   font-weight:lighter;
 letter-spacing: 0.18em;
 }
+
 .about,
 .contact {
   max-width: 700px;
@@ -446,8 +448,7 @@ div.topBotomBordersIn a:hover::after {
   position: relative;
   display: block;
   margin-bottom: 15px;
-  width: 100%;
-  
+  width: 100%;  
   background: #eee;
   height: 35px;
   border-radius: 3px;
