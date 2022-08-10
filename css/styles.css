@@ -120,7 +120,7 @@ a:active {
 
 
 .profile__portrait { 
-  width: 100%;
+  width: 100vw;
   height: 850px;
   object-fit: cover;
 }
@@ -222,7 +222,7 @@ filter: grayscale(0%);
   color: var(--secondary-color);
   POSITION: fixed;
   bottom: 0;
-  height: 20%;
+  height: 22vh;
   padding: 10px 20% 15px 20%;
 }
 
